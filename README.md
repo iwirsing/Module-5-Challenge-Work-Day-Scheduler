@@ -7,11 +7,11 @@ HTML, CSS, JS with MomentJS and Google Fonts are employed to build this page.
 1. [Deployed Page](#deployed-page)
 2. [Web Application Features](#web-application-features)
 
-## Deployed Page
+## <u>Deployed Page</u>
 
 [Work Day Scheduler](https://iwirsing.github.io/Module-5-Challenge-Work-Day-Scheduler/) 
 
-## Web Application Features
+## <u>Web Application Features</u>
 
 1. Current day and time using momentJS are displayed on the top of the page. The time is checked every second.
 2. Google fonts of Bungee Shade and Indie Flower are used to add to the design.
@@ -19,8 +19,13 @@ HTML, CSS, JS with MomentJS and Google Fonts are employed to build this page.
 4. A save button (&#10004; Save) saves the todo input of the user to the local storage.
 5. A delete button (&#10060;) deletes the time block's todo data off the local storage.
 
-## Screenshot
+## <u>Screenshot</u>
 
 ![work day scheduler screenshot](./assets/images/workdayscheduler.png)
 
-## 
+## <u>Sources</u> 
+1. https://fonts.google.com/
+2. https://getbootstrap.com/docs/4.5/getting-started/introduction/
+3. https://momentjs.com/
+4. https://stackoverflow.com
+
