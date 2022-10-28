@@ -18,6 +18,15 @@ $("#currentDay").text(today.format("dddd, MMMM Do, YYYY"));
 console.log(today);
 
 
+function updateTime(){
+    var timeNow = moment();
+    $("#currentTime").text("at "+ timeNow.format("hh:mm:ss A "));
+}
+updateTime();
+window.setInterval(updateTime, 1000);
+
+
+
 //color code the timeblocks according to the current time
 //capture the hour
 var currentHour=Number(today.format("HH"));
