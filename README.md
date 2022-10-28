@@ -17,7 +17,7 @@ HTML, CSS, JS with MomentJS and Google Fonts are employed to build this page.
 2. Google fonts of Bungee Shade and Indie Flower are used to add to the design.
 3. The time blocks change depending on whether it is in the past, present or future.
 4. A save button (&#10004; Save) saves the todo input of the user to the local storage.
-5. A delete button (&#10060;) deletes the time block's todo data off the local storage.
+5. A delete button (&#10060;) deletes the time block's todo data off of the local storage.
 
 ## <u>Screenshot</u>
 
