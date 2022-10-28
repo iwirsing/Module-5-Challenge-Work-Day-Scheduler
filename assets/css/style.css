@@ -16,19 +16,6 @@ body {
 
 .time-block {
   text-align: center;
- 
-}
-
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
-}
-
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
 }
 
 .past {
@@ -46,7 +33,7 @@ body {
   color: #301934;
 }
 
-/* the todo block */
+/* the todo input block */
 input {
   background: transparent;
   border: none;
