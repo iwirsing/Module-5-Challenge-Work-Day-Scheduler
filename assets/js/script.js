@@ -1,9 +1,9 @@
 //initialize variables and capture DOM elements
 var delButtonEl=$('.delBtn');
+var delAllButtonEl=$('#deleteAll');
+var saveAllButtonEl=$('#saveAll')
 var saveButtonEl=$('.saveBtn');
 
-//storage array
-var toDoObjectStorage=[];
 
 //time on the title
 var today = moment();
@@ -106,4 +106,65 @@ delButtonEl.on('click', function (event){
      // display what is stored
      displayToDo();
 
+})
+
+//FUNCTION 6: Save All
+//saves all input without out doing it one by one
+saveAllButtonEl.on('click',function(){
+
+    //loop through all the blocks
+    for(var i=9;i<18;i++){
+    
+        //build the id for input
+        var inputIdBuild="#text"+i;
+        console.log(inputIdBuild);
+      
+        // capture the input text of that time block
+        var textInside=$(inputIdBuild).val();
+      
+        //save to local storage
+        localStorage.setItem(inputIdBuild,JSON.stringify(textInside));
+    }
+
+    // display what is stored
+    displayToDo();
+
+    //change the  Save all to Saved all for 1.5 seconds then revert back
+    var $this = $(this);
+    $this.text('Successfully Saved All').css({'color':'#FFC300'});
+    setTimeout(() => {
+        $this.html('Save All').css({'color':'white'});
+    }, 1500);
+})
+
+//FUNCTION 7: Delete All
+//deletes all saved data without doing it one by one
+delAllButtonEl.on('click', function(){
+      
+    //loop through all the blocks
+      for(var i=9;i<18;i++){
+    
+        //build the id for input
+        var inputIdBuild="#text"+i;
+        console.log(inputIdBuild);
+      
+        // capture the input text of that time block
+        var textInside=$(inputIdBuild).val();
+      
+        //remove from Local Storage
+        localStorage.removeItem(inputIdBuild);
+
+        //remove from screen
+        $(inputIdBuild).val("");
+    
+    }
+    // display what is stored
+    displayToDo();
+
+    //change the  Delete All to Deleted for 1.5 seconds then revert back
+    var $this = $(this);
+    $this.text('Successfully Deleted All').css({'color':'#FFC300'});
+    setTimeout(() => {
+        $this.html('Delete All').css({'color':'white'});
+    }, 1500);
 })
